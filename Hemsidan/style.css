@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* Navigation */
+
+.nav_container {
+    color: black;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+}
+
+.nav {
+    position: fixed;
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 20px 20px 10px;
+    box-shadow: 1px 1px 20px 0 rgba(184, 184, 184, 0.233), 0 1px 20px 0 rgba(224, 223, 223, 0.19);
+}
+
+.home {
+    margin-left: 20px;
+}
+
+.about {
+    margin-left: 20px;
+}
+
+.portfolio {
+    margin-left: 20px;
+}
+
+
+/* fixed background with transparent text over EMMY ZETTERGREN */
+
+.parallax {
+    background-image: url("img/bgr.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60vh;
+    width: 100%;
+}
+
+.transbox {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 0;
+    background-color: #fff;
+    opacity: 0;
+    height: 100%;
+}
+
+.transtextbox {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 0;
+    font-size: 5vw;
+    height: 100%;
+}
+
+
+/* presentation "Photographer, Artist, Creator" - white box */
+
+.container_1 {
+    background-color: white;
+    color: black;
+    font-size: 3vw;
+    justify-content: center;
+    display: flex;
+    padding: 0 0 0 0;
+    height: 50vw;
+    margin: 0;
+    width: 100%;
+}
+
+
+/* fixed background_2 with transparent container overlay*/
+
+.parallax_2 {
+    background-image: url("img/bgr2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60vh;
+    width: 100%;
+}
+
+.transbox_2 {
+    position: relative;
+    width: 200px;
+    height: 600px;
+    float: right;
+    margin: 500px auto 0 auto;
+    padding: 50px;
+    background-color: #fff;
+    opacity: 0;
+}
+
+.transtextbox_2 {
+    position: relative;
+    width: 200px;
+    height: 600px;
+    float: right;
+    margin: 800px 200px 0 0;
+    padding: 20px;
+    font-size: 5vw;
+}
+
+
+/* Black grid */
+
+.container_2 {
+    background-color: black;
+    color: white;
+    font-size: 3vw;
+    font-weight: 10;
+    justify-content: center;
+    display: flex;
+    height: 200px;
+    width: auto;
+    padding: 70px 0 0 0;
+    margin: 0px;
+}
+
+
+/* Grid with images */
+
+.grid-container {
+    margin: .0vw;
+    font-size: 0;
+    display: -ms-flexbox;
+    -ms-flexbox-wrap: wrap;
+    -ms-flexbox-direction: column;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.grid-container div {
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    width: 600px;
+    margin: .0vw;
+}
+
+.grid-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* Grid container overlay 
+https://codepen.io/kblizeck/pen/PqBOPa?editors=1111
+*/
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+h2 {
+    display: inline-block;
+    font-family: bebas, sans-serif;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin: 0.2em auto;
+    padding: 5px;
+    text-transform: uppercase;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 5px;
+        background: rgba(0, 255, 255, 0.6);
+        z-index: -1;
+    }
+}
+
+h4 {
+    display: block;
+    background-color: #ff6900;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 0.7375rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1rem;
+    padding: .5em .5em .25em .5em;
+    text-align: center;
+    width: 160px;
+    text-transform: uppercase;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: black;
+    color: white;
+    justify-content: center;
+    display: flex;
+    height: 100px;
+    padding: 30px;
+}
+
+@media screen and (max-width: 400px) {
+    header div {
+        margin: 0;
+    }
+    header {
+        padding: 0;
+    }
+}
+
+
+/* Text container over parallax */
+
+@media screen and (max-width: 640px) {
+    div.parallax {
+        width: 100%;
+        min-width: 200px;
+        max-height: 400px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    div.transbox {
+        position: relative;
+        width: 100%;
+        min-width: 100px;
+        max-height: 400px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 90px 20px 0 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    div.transtextbox {
+        position: relative;
+        font-size: 2em;
+        width: 100%;
+        min-width: 100px;
+        max-height: 400px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 90px 20px 0px 20px;
+    }
+}
+
+
+/* Text container description white background */
+
+@media screen and (max-width: 640px) {
+    div.container_1 {
+        font-size: 1.2em;
+        padding: 200px 0 0 0;
+    }
+}
